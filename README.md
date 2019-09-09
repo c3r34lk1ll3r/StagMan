@@ -65,17 +65,17 @@ The available plugins are:
   * `E` Export all the packets in PCAP format.
 * `Low Level Network`: this plugin hooks to low level network functions (like socket, recv, sendmsg, ecc.) and it allows to intecerpet traffic at lower level. There is also the IPC traffic (unix domain socket). It is a bit heavy so I suggest to stop the hooking before the analysis.
 * `File open`: this plugin hooks open system call so we can see the opened files. Thanks to `frida-fs` we can download the file and perform an offline analysis.
-         * Context menu: 
-         * `e` export selected file.
-         * `E` export all the files
+  * Context menu: 
+  * `e` export selected file.
+  * `E` export all the files
 
 Without arguments the application will start in GUI mode. The home page allows to select the device where frida-server is running and, after the selection, a list of the applications.
 
 ## TODO:
 A lot of things, any help would be appreciate. Roadmap:
-[ ] iOS Support
-[ ] Local server support
-[ ] TCP Frida Server
-[ ] More plugins
-[x] Headless function
-[ ] Auto-analyzer
+- [ ] iOS Support
+- [ ] Local server support
+- [ ] TCP Frida Server
+- [ ] More plugins
+- [x] Headless function
+- [ ] Auto-analyzer
